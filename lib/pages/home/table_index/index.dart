@@ -3,7 +3,7 @@ import 'package:goodhouse/pages/home/table_index/index_navigator.dart';
 import 'package:goodhouse/pages/home/table_index/index_navigator_item.dart';
 import 'package:goodhouse/widget/common_swiper.dart';
 
-import 'index_recomment.dart';
+import 'index_recommend.dart';
 
 class TabIndex extends StatelessWidget {
   const TabIndex({Key? key}) : super(key: key);
