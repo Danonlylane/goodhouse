@@ -58,7 +58,6 @@ class TabProfileHeader extends StatelessWidget {
   }
 
   Widget _loginBuilder(BuildContext context) {
-    String userName = '黄承贝';
     String userImage =
         'https://tva1.sinaimg.cn/large/008i3skNgy1gsuhtensa6j30lk0li76f.jpg';
     return Container(

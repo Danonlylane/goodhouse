@@ -4,6 +4,7 @@ import 'package:goodhouse/pages/home/index.dart';
 import 'package:goodhouse/pages/login.dart';
 import 'package:goodhouse/pages/register.dart';
 import 'package:goodhouse/pages/room_detail/index.dart';
+import 'package:goodhouse/setting.dart';
 
 import 'pages/not_found.dart';
 
@@ -12,6 +13,7 @@ class Routes {
   static String home = '/';
   static String login = 'login';
   static String register = '/register';
+  static String setting = '/setting';
   static String roomDetail = '/room/roomId';
 
   // 定义路由处理函数
@@ -33,6 +35,11 @@ class Routes {
   static Handler _registerHanlder = Handler(
       handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
     return RegisterPage();
+  });
+
+  static Handler _settingHanlder = Handler(
+      handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
+    return SettingPage();
   });
 
   static Handler _notFoundHandler = Handler(
@@ -58,6 +65,8 @@ class Routes {
     router.define(home, handler: _homeHandler);
     router.define(login, handler: _loginHandler);
     router.define(register, handler: _registerHanlder);
+    router.define(setting, handler: _settingHanlder);
+
     router.define(roomDetail, handler: _roomDetailHandler);
     router.notFoundHandler = _notFoundHandler;
 
