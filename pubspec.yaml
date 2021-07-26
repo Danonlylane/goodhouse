@@ -61,6 +61,7 @@ flutter:
     - static/images/home_index_recommend_2.png
     - static/images/home_index_recommend_3.png
     - static/images/home_index_recommend_4.png
+    - static/icons/widget_search_bar_map.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

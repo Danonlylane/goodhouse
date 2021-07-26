@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:goodhouse/pages/home/tab_search/dataList.dart';
 import 'package:goodhouse/widget/room_list_item_widget.dart';
+import 'package:goodhouse/widget/search_bar/index.dart';
 
 class IndexSearch extends StatefulWidget {
   const IndexSearch({Key? key}) : super(key: key);
@@ -14,7 +15,13 @@ class _IndexSearchState extends State<IndexSearch> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('搜索tab'),
+        title: SearchBar(
+          shwoLocation: true,
+          onSearch: () {
+            Navigator.of(context).pushNamed('search');
+          },
+        ),
+        backgroundColor: Colors.white,
       ),
       body: Column(
         children: [

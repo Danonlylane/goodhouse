@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:goodhouse/pages/home/tab_info/index.dart';
+import 'package:goodhouse/pages/home/tab_prifile/index.dart';
 import 'package:goodhouse/pages/home/tab_search/index.dart';
-import 'package:goodhouse/pages/home/table_index/index.dart';
+import 'package:goodhouse/pages/home/tab_index/index.dart';
 import 'package:goodhouse/widget/page_content.dart';
 
 // tab内容区
@@ -11,7 +12,7 @@ List<Widget> tabViewList = [
   IndexSearch(),
   // PageContent(name: "资讯"),
   TabInfo(),
-  PageContent(name: "我的"),
+  TabProfile(),
 ];
 
 // bottomNavigatorItem
