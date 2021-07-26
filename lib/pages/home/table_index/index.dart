@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:goodhouse/pages/home/info/index.dart';
 import 'package:goodhouse/pages/home/table_index/index_navigator.dart';
 import 'package:goodhouse/pages/home/table_index/index_navigator_item.dart';
 import 'package:goodhouse/widget/common_swiper.dart';
@@ -19,6 +20,7 @@ class TabIndex extends StatelessWidget {
           CommonSwiper(),
           IndexNavigator(),
           IndexRecomment(),
+          Info(),
           // IndexNavigatorItem(title, imageUrl, onTap)
           // Text("这里是内容区"),
         ],
