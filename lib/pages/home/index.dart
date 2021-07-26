@@ -1,12 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:goodhouse/pages/home/tab_info/index.dart';
+import 'package:goodhouse/pages/home/tab_search/index.dart';
 import 'package:goodhouse/pages/home/table_index/index.dart';
 import 'package:goodhouse/widget/page_content.dart';
 
 // tab内容区
 List<Widget> tabViewList = [
   TabIndex(),
-  PageContent(name: "搜索"),
-  PageContent(name: "资讯"),
+  // PageContent(name: "搜索"),
+  IndexSearch(),
+  // PageContent(name: "资讯"),
+  TabInfo(),
   PageContent(name: "我的"),
 ];
 
