@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:goodhouse/pages/home/info/index.dart';
+import 'package:goodhouse/pages/home/tab_prifile/function_button.dart';
 import 'package:goodhouse/pages/home/tab_prifile/header.dart';
+
+import 'advertisement.dart';
 
 class TabProfile extends StatelessWidget {
   const TabProfile({Key? key}) : super(key: key);
@@ -22,7 +26,16 @@ class TabProfile extends StatelessWidget {
         ),
         // backgroundColor: Colors.white,
       ),
-      body: TabProfileHeader(),
+      body: ListView(
+        children: [
+          TabProfileHeader(),
+          FunctionButton(),
+          Advertisement(),
+          Info(
+            showTitle: true,
+          ),
+        ],
+      ),
     );
   }
 }
