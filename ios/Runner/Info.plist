@@ -2,6 +2,14 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSAppTransportSecurity</key>
+	<key>NSAllowsArbitraryLoads</key>
+	<key>NSCameraUsageDescription</key>
+	<string>Use to get room image</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Use to capture audio for room</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Use to get room image</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>

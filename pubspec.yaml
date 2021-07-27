@@ -26,6 +26,7 @@ dependencies:
   fluro: ^2.0.3
   flutter_swiper_null_safety: ^1.0.2
   fluttertoast: ^8.0.7
+  image_picker: ^0.8.2
   
 
 
@@ -94,6 +95,11 @@ flutter:
   #       - asset: fonts/Schyler-Regular.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
+  fonts:
+    - family: CommonIcon
+      fonts:
+        - asset: static/fonts/iconfont.ttf
+        
   #   - family: Trajan Pro
   #     fonts:
   #       - asset: fonts/TrajanPro.ttf
