@@ -1,6 +1,8 @@
 import 'package:fluro/fluro.dart';
 import 'package:flutter/material.dart';
 import 'package:goodhouse/pages/home/index.dart';
+import 'package:goodhouse/pages/home/room_add/index.dart';
+import 'package:goodhouse/pages/home/room_manager/index.dart';
 import 'package:goodhouse/pages/login.dart';
 import 'package:goodhouse/pages/register.dart';
 import 'package:goodhouse/pages/room_detail/index.dart';
@@ -14,6 +16,8 @@ class Routes {
   static String login = 'login';
   static String register = '/register';
   static String setting = '/setting';
+  static String roomManage = '/roomManage';
+  static String roomAdd = '/roomAdd';
   static String roomDetail = '/room/roomId';
 
   // 定义路由处理函数
@@ -42,6 +46,16 @@ class Routes {
     return SettingPage();
   });
 
+  static Handler _roomManageHanlder = Handler(
+      handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
+    return RoomManagerPage();
+  });
+
+  static Handler _roomAddHanlder = Handler(
+      handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
+    return RoomAddPage();
+  });
+
   static Handler _notFoundHandler = Handler(
       handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
     return NotFoundPage();
@@ -66,7 +80,8 @@ class Routes {
     router.define(login, handler: _loginHandler);
     router.define(register, handler: _registerHanlder);
     router.define(setting, handler: _settingHanlder);
-
+    router.define(roomManage, handler: _roomManageHanlder);
+    router.define(roomAdd, handler: _roomAddHanlder);
     router.define(roomDetail, handler: _roomDetailHandler);
     router.notFoundHandler = _notFoundHandler;
 
