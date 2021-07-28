@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:goodhouse/pages/home/tab_search/dataList.dart';
+import 'package:goodhouse/pages/home/tab_search/data_list.dart';
 
 class CommonTag extends StatelessWidget {
   final String title;

@@ -27,6 +27,7 @@ dependencies:
   flutter_swiper_null_safety: ^1.0.2
   fluttertoast: ^8.0.7
   image_picker: ^0.8.2
+  share: ^2.0.4
   
 
 

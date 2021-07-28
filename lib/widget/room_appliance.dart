@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:goodhouse/pages/home/tab_prifile/function_button_data.dart';
 import '../config.dart';
 import 'common_check_button.dart';
 
@@ -8,6 +9,8 @@ class RoomApplianceItem {
   final bool isChecked;
 
   const RoomApplianceItem(this.title, this.iconPoint, this.isChecked);
+
+  // const RoomApplianceItem(this.title, this.iconPoint, this.isChecked);
 }
 
 const List<RoomApplianceItem> _dataList = [
@@ -74,6 +77,52 @@ class _RoomApplianceState extends State<RoomAppliance> {
                           CommonCheckButton(item.isChecked)
                         ]),
                       ),
+                    ))
+                .toList()),
+      ),
+    );
+  }
+}
+
+class RoomApplianceList extends StatefulWidget {
+  final List<String> list;
+
+  const RoomApplianceList({Key? key, required this.list}) : super(key: key);
+
+  @override
+  _RoomApplianceListState createState() => _RoomApplianceListState();
+}
+
+class _RoomApplianceListState extends State<RoomApplianceList> {
+  @override
+  Widget build(BuildContext context) {
+    var showList =
+        _dataList.where((item) => list.contains(item.title)).toList();
+    if (showList.length == 0) {
+      return Container(
+        padding: EdgeInsets.only(left: 10),
+        child: Text('暂无房源配置信息'),
+      );
+    }
+    return Container(
+      child: Container(
+        child: Wrap(
+            runSpacing: 30.0,
+            children: showList
+                .map((item) => Container(
+                      width: MediaQuery.of(context).size.width / 5,
+                      child: Column(children: <Widget>[
+                        Icon(
+                            //字体图标的使用
+                            IconData(item.iconPoint,
+                                fontFamily: Config.CommonIcon),
+                            size: 40.0),
+                        Padding(
+                          padding: EdgeInsets.all(10.0),
+                          child: Text(item.title),
+                        ),
+                        // CommonCheckButton(item.isChecked)
+                      ]),
                     ))
                 .toList()),
       ),

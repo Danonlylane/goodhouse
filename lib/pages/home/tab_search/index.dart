@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:goodhouse/pages/home/tab_search/dataList.dart';
+import 'package:goodhouse/pages/home/tab_search/data_list.dart';
 import 'package:goodhouse/widget/room_list_item_widget.dart';
 import 'package:goodhouse/widget/search_bar/index.dart';
 

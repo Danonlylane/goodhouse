@@ -5087,6 +5087,7 @@ fake_async
    limitations under the License.
 --------------------------------------------------------------------------------
 collection
+mime
 stream_channel
 typed_data
 
@@ -5153,6 +5154,7 @@ flutter_plugin_android_lifecycle
 image_picker_for_web
 image_picker_platform_interface
 plugin_platform_interface
+share
 
 Copyright 2013 The Flutter Authors. All rights reserved.
 

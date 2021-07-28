@@ -18,7 +18,7 @@ class Routes {
   static String setting = '/setting';
   static String roomManage = '/roomManage';
   static String roomAdd = '/roomAdd';
-  static String roomDetail = '/room/roomId';
+  static String roomDetail = '/roomDetail/:roomId';
 
   // 定义路由处理函数
 
