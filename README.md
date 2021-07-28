@@ -40,7 +40,7 @@ Flutter (Channel stable, 2.2.3, on macOS 11.4 20F71 darwin-arm, locale
 - utils：工具类，将第三方库封装为新的组件，以便后续修改和维护
 - widget：主要是自己定义的widget，起到良好的代码复用和维护方便效果
 
-<img src="/Users/onlybei/Library/Application Support/typora-user-images/image-20210729005303586.png" alt="image-20210729005303586" style="zoom:50%;" />
+<img src="https://tva1.sinaimg.cn/large/008i3skNgy1gsx5d9w907j30c40uodh4.jpg" style="zoom:50%;" />
 
 ### 项目前置知识：（前排提醒：教程录制的时间Dart还没有空安全机制，因为现在flutter硬性要求空安全，而且空安全机制能够确保程序的稳定性，所以这里采用Dart2.0以上的版本。）
 
