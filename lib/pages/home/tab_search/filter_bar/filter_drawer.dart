@@ -24,7 +24,7 @@ class FilterDrawer extends StatelessWidget {
       ScopedModelHelper.getModel<FilterBarModel>(context)
           .selectedListTroggleItem(val);
     }
-
+ 
     return Drawer(
       child: SafeArea(
         child: ListView(
