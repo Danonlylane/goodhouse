@@ -50,7 +50,7 @@ Flutter (Channel stable, 2.2.3, on macOS 11.4 20F71 darwin-arm, locale
 
   - 静态可选类型（没有空安全）下类型的层级结构：
 
-  <img src="https://tva1.sinaimg.cn/large/008i3skNgy1gsx1ofzqrxj30p00jaaaz.jpg" width="250px" />
+    <img src="https://tva1.sinaimg.cn/large/008i3skNgy1gsx1ofzqrxj30p00jaaaz.jpg" width="250px" />
 
   - 健全的静态类型（空安全）下的类型层级结构：
 
