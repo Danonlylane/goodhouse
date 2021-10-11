@@ -29,9 +29,9 @@ Flutter (Channel stable, 2.2.3, on macOS 11.4 20F71 darwin-arm, locale
 
 首页、搜索页、资讯页、个人主页、房源发布页、房屋管理页、房屋详情页、登录页、注册页
 
-<img src="https://tva1.sinaimg.cn/large/008i3skNgy1gsx54k58o7j30u016kk0o.jpg" style="zoom: 31%;" />
+<img src="https://tva1.sinaimg.cn/large/008i3skNgy1gsx54k58o7j30u016kk0o.jpg" width="500px" />
 
-<img src="https://tva1.sinaimg.cn/large/008i3skNgy1gsx56cakqmj31160r60wn.jpg" style="zoom: 25%;" />
+<img src="https://tva1.sinaimg.cn/large/008i3skNgy1gsx56cakqmj31160r60wn.jpg" width="500px" />
 
 ### 项目的目录结构：
 
@@ -40,7 +40,7 @@ Flutter (Channel stable, 2.2.3, on macOS 11.4 20F71 darwin-arm, locale
 - utils：工具类，将第三方库封装为新的组件，以便后续修改和维护
 - widget：主要是自己定义的widget，起到良好的代码复用和维护方便效果
 
-<img src="https://tva1.sinaimg.cn/large/008i3skNgy1gsx5d9w907j30c40uodh4.jpg" style="zoom:25%;" />
+<img src="https://tva1.sinaimg.cn/large/008i3skNgy1gsx5d9w907j30c40uodh4.jpg" width="250px" />
 
 ### 项目前置知识：（前排提醒：教程录制的时间Dart还没有空安全机制，因为现在flutter硬性要求空安全，而且空安全机制能够确保程序的稳定性，所以这里采用Dart2.0以上的版本。）
 
@@ -50,11 +50,11 @@ Flutter (Channel stable, 2.2.3, on macOS 11.4 20F71 darwin-arm, locale
 
   - 静态可选类型（没有空安全）下类型的层级结构：
 
-  <img src="https://tva1.sinaimg.cn/large/008i3skNgy1gsx1ofzqrxj30p00jaaaz.jpg" style="zoom: 50%;" />
+  <img src="https://tva1.sinaimg.cn/large/008i3skNgy1gsx1ofzqrxj30p00jaaaz.jpg" width="250px" />
 
   - 健全的静态类型（空安全）下的类型层级结构：
 
-    <img src="https://tva1.sinaimg.cn/large/008i3skNgy1gsx1r5n66oj30pe0dm0ti.jpg" style="zoom: 50%;" />
+    <img src="https://tva1.sinaimg.cn/large/008i3skNgy1gsx1r5n66oj30pe0dm0ti.jpg" width="250px" />
 
     
 
